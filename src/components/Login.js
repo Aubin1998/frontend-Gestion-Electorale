@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin= async (event) => {
     event.preventDefault()
     try{
-      await axios.post('/login', {email, password})
+      await axios.post('/api/logins', {email, password})
       setEmail("")
       setPassword("")
       navigate("/")
